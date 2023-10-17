@@ -6,7 +6,6 @@ temp-artifacts
 node_modules
 dist/
 build/
-.vscode
 .idea
 /types
 contracts/hardhat-dependency-compiler
@@ -27,3 +26,7 @@ deployments/
 certora-logs
 certora_debug_log.txt
 resource_errors.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+branch_structure.json

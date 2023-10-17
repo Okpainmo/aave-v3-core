@@ -1,6 +1,6 @@
 {
   "name": "@aave/core-v3",
-  "version": "1.19.1",
+  "version": "1.19.2",
   "description": "Aave Protocol V3 core smart contracts",
   "files": [
     "contracts",
@@ -29,7 +29,7 @@
     "ci:test": ". ./setup-test-env.sh  && npm run test",
     "ci:clean": "rm -rf ./artifacts ./cache ./types ./temp-artifacts",
     "prepare": "husky install",
-    "build": "tsc --project lib.tsconfig.json",
+    "build": "node api.js && tsc --project lib.tsconfig.json",
     "prepublish": "npm run compile && npm run build"
   },
   "devDependencies": {
